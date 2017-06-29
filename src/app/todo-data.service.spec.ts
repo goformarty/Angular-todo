@@ -1,7 +1,6 @@
-/* tslint:disable:no-unused-variable */
-
-import { TestBed, async, inject } from '@angular/core/testing';
-import { TodoDataService } from './todo-data.service';
+import {TestBed, async, inject} from '@angular/core/testing';
+import {Todo} from './todo';
+import {TodoDataService} from './todo-data.service';
 
 describe('TodoDataService', () => {
   beforeEach(() => {
@@ -15,6 +14,7 @@ describe('TodoDataService', () => {
   }));
 
   describe('#getAllTodos()', () => {
+
     it('should return an empty array by default', inject([TodoDataService], (service: TodoDataService) => {
       expect(service.getAllTodos()).toEqual([]);
     }));

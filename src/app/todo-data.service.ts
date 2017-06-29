@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { Todo } from './todo';
+import {Injectable} from '@angular/core';
+import {Todo} from './todo';
 
 @Injectable()
 export class TodoDataService {
@@ -29,6 +29,7 @@ export class TodoDataService {
       .filter(todo => todo.id !== id);
     return this;
   }
+
   // Simulate PUT /todos/:id
   updateTodoById(id: number, values: Object = {}): Todo {
     let todo = this.getTodoById(id);
@@ -58,4 +59,5 @@ export class TodoDataService {
     });
     return updatedTodo;
   }
+
 }

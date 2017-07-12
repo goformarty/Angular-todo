@@ -10,7 +10,7 @@ import { Todo } from './todo';
 })
 export class AppComponent {
 
-  newTodo: Todo = new Todo();
+  // newTodo: Todo = new Todo();
 
   constructor(private todoDataService: TodoDataService) {
   }
